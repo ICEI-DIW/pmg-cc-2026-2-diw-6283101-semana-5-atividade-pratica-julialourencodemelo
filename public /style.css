@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #eeeeee;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   CABEÇALHO
+   ========================= */
+
+.cabecalho {
+    background-color: #333333;
+
+    color: white;
+
+    padding: 30px;
+
+    position: relative;
+}
+
+
+.menu {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.menu h1 {
+    font-size: 32px;
+}
+
+
+.menu ul {
+    display: flex;
+
+    list-style: none;
+}
+
+
+.menu li {
+    margin-left: 25px;
+}
+
+
+.menu a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+}
+
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* =========================
+   SEÇÕES
+   ========================= */
+
+section {
+    padding: 90px 50px;
+
+    text-align: center;
+}
+
+
+section h2 {
+    font-size: 32px;
+
+    margin-bottom: 30px;
+}
+
+
+.descricao {
+    margin-bottom: 45px;
+
+    font-size: 18px;
+}
+
+
+
+/* =========================
+   INÍCIO
+   ========================= */
+
+.inicio {
+    background-color: white;
+}
+
+
+.inicio p {
+    max-width: 800px;
+
+    margin: 0 auto 20px auto;
+
+    font-size: 18px;
+}
+
+
+.inicio img {
+    width: 850px;
+
+    max-width: 100%;
+
+    height: 450px;
+
+    object-fit: cover;
+
+    margin-top: 40px;
+}
+
+
+
+/* =========================
+   PASSEIOS
+   ========================= */
+
+.passeios {
+    background-color: #eeeeee;
+}
+
+
+.artigo {
+    background-color: white;
+
+    display: inline-block;
+
+    vertical-align: top;
+
+    width: 320px;
+
+    margin: 20px;
+
+    padding: 25px;
+
+    min-height: 480px;
+
+    position: relative;
+}
+
+
+.artigo img {
+    width: 100%;
+
+    height: 210px;
+
+    object-fit: cover;
+
+    margin-bottom: 25px;
+}
+
+
+.artigo h3 {
+    font-size: 22px;
+
+    margin-bottom: 18px;
+}
+
+
+.artigo p {
+    font-size: 16px;
+
+    margin-bottom: 15px;
+}
+
+
+
+/* =========================
+   MUSEUS
+   ========================= */
+
+.museus {
+    background-color: #dddddd;
+}
+
+
+.museus>p {
+    margin-bottom: 40px;
+}
+
+
+
+/* =========================
+   PARQUES
+   ========================= */
+
+.parques {
+    background-color: white;
+}
+
+
+.parques p {
+    margin-bottom: 25px;
+}
+
+
+.subtitulo {
+    margin-top: 50px;
+
+    margin-bottom: 20px;
+}
+
+
+.lista-parques {
+    list-style: none;
+
+    display: inline-block;
+
+    text-align: left;
+
+    margin-top: 15px;
+}
+
+
+
+
+/* =========================
+   OUTROS LUGARES
+   ========================= */
+
+.outros {
+    background-color: #eeeeee;
+}
+
+
+.outros .artigo {
+    min-height: 500px;
+}
+
+
+.outros .artigo h3 {
+    margin-top: 5px;
+}
+
+
+
+/* =========================
+   RESERVAS
+   ========================= */
+
+.reservas {
+    background-color: #dddddd;
+}
+
+
+.formulario {
+    width: 450px;
+
+    max-width: 100%;
+
+    margin: 40px auto 0 auto;
+
+    padding: 35px;
+
+    background-color: white;
+}
+
+
+.formulario label {
+    display: block;
+
+    text-align: left;
+
+    margin-top: 20px;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+}
+
+
+.formulario input,
+.formulario select {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #cccccc;
+
+    font-size: 15px;
+}
+
+
+.formulario button {
+    display: block;
+
+    margin: 35px auto 0 auto;
+
+    padding: 14px 40px;
+
+    border: none;
+
+    background-color: #333333;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+.formulario button:hover {
+    background-color: #555555;
+}
+
+
+
+/* =========================
+   RODAPÉ
+   ========================= */
+
+.rodape {
+    background-color: #333333;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px;
+}
+
+
+.rodape p {
+    margin: 12px;
+}
