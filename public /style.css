@@ -1,3 +1,7 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+   ========================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,9 +11,7 @@
 
 body {
     font-family: Arial, sans-serif;
-
     background-color: #eeeeee;
-
     line-height: 2;
 }
 
@@ -20,20 +22,14 @@ body {
 
 .cabecalho {
     background-color: #333333;
-
     color: white;
-
     padding: 30px;
-
-    position: relative;
 }
 
 
 .menu {
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
 }
 
@@ -45,7 +41,6 @@ body {
 
 .menu ul {
     display: flex;
-
     list-style: none;
 }
 
@@ -57,9 +52,7 @@ body {
 
 .menu a {
     color: white;
-
     text-decoration: none;
-
     font-size: 16px;
 }
 
@@ -69,31 +62,26 @@ body {
 }
 
 
-
 /* =========================
    SEÇÕES
    ========================= */
 
 section {
     padding: 90px 50px;
-
     text-align: center;
 }
 
 
 section h2 {
     font-size: 32px;
-
     margin-bottom: 30px;
 }
 
 
 .descricao {
     margin-bottom: 45px;
-
     font-size: 18px;
 }
-
 
 
 /* =========================
@@ -107,25 +95,59 @@ section h2 {
 
 .inicio p {
     max-width: 800px;
-
     margin: 0 auto 20px auto;
-
     font-size: 18px;
 }
 
 
 .inicio img {
     width: 850px;
-
     max-width: 100%;
-
     height: 450px;
-
     object-fit: cover;
-
     margin-top: 40px;
 }
 
+
+/* =========================
+   CARDS - CSS GRID
+   ========================= */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+.artigo {
+    background-color: white;
+    width: 100%;
+    padding: 25px;
+    min-height: 480px;
+}
+
+
+.artigo img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    margin-bottom: 25px;
+}
+
+
+.artigo h3 {
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+
+.artigo p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
 
 
 /* =========================
@@ -137,51 +159,6 @@ section h2 {
 }
 
 
-.artigo {
-    background-color: white;
-
-    display: inline-block;
-
-    vertical-align: top;
-
-    width: 320px;
-
-    margin: 20px;
-
-    padding: 25px;
-
-    min-height: 480px;
-
-    position: relative;
-}
-
-
-.artigo img {
-    width: 100%;
-
-    height: 210px;
-
-    object-fit: cover;
-
-    margin-bottom: 25px;
-}
-
-
-.artigo h3 {
-    font-size: 22px;
-
-    margin-bottom: 18px;
-}
-
-
-.artigo p {
-    font-size: 16px;
-
-    margin-bottom: 15px;
-}
-
-
-
 /* =========================
    MUSEUS
    ========================= */
@@ -191,10 +168,9 @@ section h2 {
 }
 
 
-.museus>p {
+.museus > p {
     margin-bottom: 40px;
 }
-
 
 
 /* =========================
@@ -213,22 +189,16 @@ section h2 {
 
 .subtitulo {
     margin-top: 50px;
-
     margin-bottom: 20px;
 }
 
 
 .lista-parques {
     list-style: none;
-
     display: inline-block;
-
     text-align: left;
-
     margin-top: 15px;
 }
-
-
 
 
 /* =========================
@@ -250,7 +220,6 @@ section h2 {
 }
 
 
-
 /* =========================
    RESERVAS
    ========================= */
@@ -262,26 +231,18 @@ section h2 {
 
 .formulario {
     width: 450px;
-
     max-width: 100%;
-
     margin: 40px auto 0 auto;
-
     padding: 35px;
-
     background-color: white;
 }
 
 
 .formulario label {
     display: block;
-
     text-align: left;
-
     margin-top: 20px;
-
     margin-bottom: 8px;
-
     font-weight: bold;
 }
 
@@ -289,32 +250,21 @@ section h2 {
 .formulario input,
 .formulario select {
     width: 100%;
-
     padding: 13px;
-
     border: 1px solid #cccccc;
-
     font-size: 15px;
 }
 
 
 .formulario button {
     display: block;
-
     margin: 35px auto 0 auto;
-
     padding: 14px 40px;
-
     border: none;
-
     background-color: #333333;
-
     color: white;
-
     font-size: 16px;
-
     cursor: pointer;
-
     border-radius: 5px;
 }
 
@@ -324,22 +274,131 @@ section h2 {
 }
 
 
-
 /* =========================
    RODAPÉ
    ========================= */
 
 .rodape {
     background-color: #333333;
-
     color: white;
-
     text-align: center;
-
     padding: 40px;
 }
 
 
 .rodape p {
     margin: 12px;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+   CELULAR E TABLET
+   ========================= */
+
+@media (max-width: 768px) {
+
+    /* CABEÇALHO */
+
+    .cabecalho {
+        padding: 20px;
+    }
+
+
+    .menu {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    .menu h1 {
+        font-size: 28px;
+    }
+
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+
+    .menu li {
+        margin-left: 0;
+    }
+
+
+    /* SEÇÕES */
+
+    section {
+        padding: 50px 20px;
+    }
+
+
+    section h2 {
+        font-size: 26px;
+        line-height: 1.4;
+    }
+
+
+    .descricao {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+
+    /* INÍCIO */
+
+    .inicio p {
+        font-size: 16px;
+    }
+
+
+    .inicio img {
+        width: 100%;
+        height: auto;
+        margin-top: 25px;
+    }
+
+
+    /* CARDS */
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+
+    .artigo {
+        min-height: auto;
+        padding: 20px;
+    }
+
+
+    .artigo img {
+        height: 200px;
+    }
+
+
+    /* OUTROS LUGARES */
+
+    .outros .artigo {
+        min-height: auto;
+    }
+
+
+    /* FORMULÁRIO */
+
+    .formulario {
+        width: 100%;
+        padding: 25px;
+    }
+
+
+    /* RODAPÉ */
+
+    .rodape {
+        padding: 30px 20px;
+    }
+
 }
