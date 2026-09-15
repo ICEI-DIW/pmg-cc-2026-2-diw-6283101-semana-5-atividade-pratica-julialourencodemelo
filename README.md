@@ -11,4 +11,5 @@ para conhecer.
 ![Página no desktop](img/desktop.png)
 
 ### Mobile
-![Página no celular](img/mobile.png)
+![Página no celular](img/mobile.PNG)
+![Página no celular](img/mobilee.PNG)
