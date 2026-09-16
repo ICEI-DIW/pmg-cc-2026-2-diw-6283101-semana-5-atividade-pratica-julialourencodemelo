@@ -1,6 +1,4 @@
-/* =========================
-   CONFIGURAÇÕES GERAIS
-   ========================= */
+/* CONFIGURAÇÕES GERAIS */
 
 * {
     margin: 0;
@@ -16,9 +14,7 @@ body {
 }
 
 
-/* =========================
-   CABEÇALHO
-   ========================= */
+/*  CABEÇALHO */
 
 .cabecalho {
     background-color: #333333;
@@ -62,9 +58,7 @@ body {
 }
 
 
-/* =========================
-   SEÇÕES
-   ========================= */
+/* SEÇÕES */
 
 section {
     padding: 90px 50px;
@@ -84,9 +78,7 @@ section h2 {
 }
 
 
-/* =========================
-   INÍCIO
-   ========================= */
+/* INICIO */
 
 .inicio {
     background-color: white;
@@ -109,9 +101,7 @@ section h2 {
 }
 
 
-/* =========================
-   CARDS - CSS GRID
-   ========================= */
+/* CARDS - CSS GRID */
 
 .cards {
     display: grid;
@@ -150,18 +140,14 @@ section h2 {
 }
 
 
-/* =========================
-   PASSEIOS
-   ========================= */
+/* PASSEIOS */
 
 .passeios {
     background-color: #eeeeee;
 }
 
 
-/* =========================
-   MUSEUS
-   ========================= */
+/* MUSEUS */
 
 .museus {
     background-color: #dddddd;
@@ -173,9 +159,7 @@ section h2 {
 }
 
 
-/* =========================
-   PARQUES
-   ========================= */
+/* PARQUES */
 
 .parques {
     background-color: white;
@@ -201,9 +185,7 @@ section h2 {
 }
 
 
-/* =========================
-   OUTROS LUGARES
-   ========================= */
+/* OUTROS LUGARES */
 
 .outros {
     background-color: #eeeeee;
@@ -220,9 +202,7 @@ section h2 {
 }
 
 
-/* =========================
-   RESERVAS
-   ========================= */
+/* RESERVAS */
 
 .reservas {
     background-color: #dddddd;
@@ -274,9 +254,7 @@ section h2 {
 }
 
 
-/* =========================
-   RODAPÉ
-   ========================= */
+/* RODAPÉ */
 
 .rodape {
     background-color: #333333;
@@ -291,10 +269,8 @@ section h2 {
 }
 
 
-/* =========================
-   RESPONSIVIDADE
-   CELULAR E TABLET
-   ========================= */
+/* RESPONSIVIDADE
+   CELULAR  */
 
 @media (max-width: 768px) {
 
